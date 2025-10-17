@@ -1,9 +1,9 @@
 import { defineConfig } from 'vite'
-import vue from '@vitejs/plugin-vue'
+import vue from '@vitejs/plugin-vue' // <--- IS THIS LINE CORRECT?
 
-// https://vitejs.dev/config/
+// vite.config.js
 export default defineConfig({
-    // 🚀 THE FIX: Set the base path to your repository name
-    base: '/M294/',
-    plugins: [vue()],
+    base: '/M294/', // The fix you previously applied
+    plugins: [vue()], // <--- IS 'vue()' INCLUDED IN PLUGINS?
+    // ... other settings (leave them out if unsure)
 })
